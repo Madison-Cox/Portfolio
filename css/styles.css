@@ -9,7 +9,10 @@
   --button-secondary-text: #fff;
   --button-primary-text: #000;
 }
-body { font-family: 'Uchen', serif; }
+
+body {
+  font-family: 'Uchen', serif;
+}
 
 h1 {
   font-size: 30px;
@@ -20,11 +23,13 @@ a {
   color: var(--button-secondary-text);
 }
 
-a :visited {/* visited link */
+a :visited {
+  /* visited link */
   color: var(--visited);
 }
 
-a :active {/* selected link */
+a :active {
+  /* selected link */
   color: var(--selected);
 }
 
@@ -71,18 +76,6 @@ button:focus {
 
 .page-footer {
   clear: both;
-}
-
-.hobbies {
-  text-align: center;
-}
-
-.hobby-list {
-  list-style-type: none;
-}
-
-.berlin {
-  text-align: center;
 }
 
 .profile {
@@ -161,10 +154,6 @@ button:focus {
   }
 }
 
-.work-experience {
-  max-width: 700px;
-  margin: 0 auto;
-}
 
 .contact-info {
   text-align: center;
@@ -230,48 +219,15 @@ button:focus,
   opacity: 0.8;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
+.img-slide {
+  width: 50%;
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: center;
+  background-color: lightgray;
 }
 
-@keyframes cloud-height {
-  from {
-    transform: translate(50px, 50px);
-  }
-
-  to {
-    transform: translate(50px, -50px);
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 7s cloud-height infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.mySlides w3-animate-fading {
+  padding: 100px;
+  float: left;
 }
