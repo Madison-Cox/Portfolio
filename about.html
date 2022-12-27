@@ -8,7 +8,6 @@
   <link rel="shortcut icon" href="img/logo.svg">
   <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -32,43 +31,21 @@
       </ul>
     </nav>
   </header>
-  <section>
-    <div class="img-slide">
-      <img class="mySlides w3-animate-fading" src="img/toolbox.jpg">
-      <img class="mySlides w3-animate-fading" src="img/2gr.jpg">
-      <img class="mySlides w3-animate-fading" src="img/engine-block.jpg">
-      <img class="mySlides w3-animate-fading" src="img/engine-parts.jpg">
-    </div>
-  </section>
-  <section>
-    <div class="hobbies">
-      <h1>About Me:</h1>
-      <p>I grew up on a farm in south Mississippi, before moving to Tennessee. I attended Lincoln College of Technology
-        for Automotive Technology and worked as an Automotive Technician for Toyota for five years. While working at
-        Toyota I always had an interest in programming and web development and decided to complete a full-stack
-        developer
-        bootcamp.</p>
-      <a href="files/cv.pdf" class="button" download>Download my CV</a>
-    </div>
+  <div class="img-slide">
+    <img class="mySlides1 w3-animate-fading" src="img/block.jpg">
+    <ul class="about-list">
+      <ol>I grew up on a farm in south Mississippi, before moving to Tennessee.</ol>
+      <ol>I attended Lincoln College of Technology for Automotive Technology and worked as an Automotive Technician
+        for Toyota for five years.</ol>
+      <ol>While working at Toyota I always had an interest in programming and web development and decided to
+        complete a full-stack developer bootcamp.</ol>
+    </ul>
+    <img class="mySlides3 w3-animate-fading" src="img/engine2gr.jpg">
+
+  </div>
+  <section class="about-section">
   </section>
   <script src="js/tota11y.min.js"></script>
-  <script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) { myIndex = 1 }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 9000);
-    }
-  </script>
-
 </body>
 
 </html>

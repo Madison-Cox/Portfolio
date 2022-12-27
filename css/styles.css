@@ -3,10 +3,10 @@
   --secondary-color: #e0b354;
   --non-visited: #0000ef;
   --visited: #7d4ba3;
-  --selected: #0024fc;
-  --button: #ffe800;
+  --selected: #838384;
+  --button: #18d100;
   --button_secondary: #2b2b2b;
-  --button-secondary-text: #fff;
+  --button-secondary-text: rgb(73, 169, 58);
   --button-primary-text: #000;
 }
 
@@ -37,26 +37,6 @@ a:hover,
 a:focus {
   /* No Underlining when hovering over a link */
   text-decoration: none;
-}
-
-button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-
-  /* takes the font from the outer container */
-  font-family: inherit;
-
-  /* styles the background color, font color, and text declaration (underline, etc.) of the button */
-  background-color: var(--button);
-  color: var(--button);
-  text-decoration: none;
-
-  /* adds spacing to the button */
-  padding: 10px;
-  border-radius: 3px;
-
-  /* gives the button a bottom border with a width of 2 px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 button:hover,
@@ -159,9 +139,6 @@ button:focus {
   text-align: center;
 }
 
-.section {
-  padding: 20px;
-}
 
 @media all and (max-width: 500px) {
   .grid {
@@ -190,44 +167,29 @@ button:focus {
   }
 }
 
-.button,
-button {
-  /* overwrites browser defaults and resets the border */
+/* resume button */
+.resume-btn {
   border: none;
   display: inline-block;
-
-  /* takes the font from the outer container */
   font-family: inherit;
-
-  /* styles the button */
   background-color: var(--button);
   color: var(--button-primary-text);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-
-  /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
+  justify-content: center;
 }
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
+/* slideshow */
 .img-slide {
-  width: 50%;
+  background-color: gray;
   display: flex;
   flex-wrap: inherit;
   justify-content: center;
-  background-color: lightgray;
 }
 
-.mySlides w3-animate-fading {
-  padding: 100px;
-  float: left;
+.about {
+  text-align: center;
 }

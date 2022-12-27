@@ -1,4 +1,11 @@
-body { font-family: 'Uchen', serif; }
+body {
+  background-color: transparent;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: 1600px 850px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/truck.jpg");
+  font-family: 'Uchen', serif;
+}
 
 h1 {
   font-size: 30px;
@@ -6,14 +13,16 @@ h1 {
 }
 
 a {
-  color: #0024fc;
+  color: #ffffff;
 }
 
-a:visited {/* visited link */
-  color: #7d4ba3;
+a:visited {
+  /* visited link */
+  color: #ffffff;
 }
 
-a:active {/* selected link */
+a:active {
+  /* selected link */
   color: #ff0e0e;
 }
 
@@ -81,7 +90,7 @@ button:focus {
 }
 
 .profile_portrait {
-text-align: center;
+  text-align: center;
   width: 250px;
   border-radius: 50%;
 }
@@ -109,7 +118,7 @@ text-align: center;
 
 .page-header__item:last-child {
   flex-grow: 1;
-  text-align: right;
+  text-align: center;
 }
 
 .navigation-list {
@@ -153,10 +162,6 @@ text-align: center;
   }
 }
 
-.work-experience {
-  max-width: 700px;
-  margin: 0 auto;
-}
 
 .contact-info {
   text-align: center;
@@ -240,48 +245,51 @@ button:focus,
   opacity: 0.8;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
+/* resume button */
+.resume-btn {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+  align-self: left;
 }
 
-@keyframes cloud-height {
-  from {
-    transform: translate(50px, 50px);
-  }
-
-  to {
-    transform: translate(50px, -50px);
-  }
+/* slideshow */
+.img-slide {
+  position: relative;
+  opacity: 1;
+  display: flex;
+  flex-wrap: inherit;
+  text-align: center;
 }
 
-.sun {
-  animation: 4s color-change infinite alternate linear;
+
+.about {
+  color: white;
+  text-align: center;
 }
 
-.cloud-front {
-  animation: 7s cloud-height infinite alternate linear;
+.about-header {
+  text-align: center;
 }
 
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
+.about-list {
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  text-align: center;
+  padding: 100px;
+  font-size: large;
 }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.about-section {
+  color: white;
+  padding-left: 43px;
+  text-align: center;
 }
