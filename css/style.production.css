@@ -1,10 +1,12 @@
 body {
-  margin: 0;
-  background-color: whitesmoke;
-  font-family: 'Uchen', serif;
+  background-blend-mode: darken;
+  background-size: 1540px 750px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ranch.jpg);
 }
 
-.index-body {
+body.about-background {
+  background: rgba(43, 42, 42, 0.829);
   background-blend-mode: darken;
   background-size: 1540px 750px;
   background-repeat: no-repeat;
@@ -125,23 +127,51 @@ button:focus {
   flex: 0 1 100px;
 }
 
+.page-header__item2 {
+  place-content: center;
+  display: flex;
+  flex: 0 1 100px;
+}
+
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: center;
 }
 
-.navigation-list {
+.navigation-list2 {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
   list-style-type: none;
   padding: 0;
-  background-color: #000;
+  background-color: transparent;
 }
 
-.navigation-list li {
+.navigation-list2 li {
   display: inline-block;
   margin-left: 15px;
+}
+
+.navigation-list__item {
+  text-align: center;
+  width: 110px;
+  color: #000000;
+  background: transparent;
+  border: 1px solid #fafafa;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 3px;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.navigation-list__item:hover,
+.navigation-list__item:active {
+  color: #fff;
+  background: #009688;
 }
 
 /* starts grid fallback */
@@ -218,6 +248,26 @@ button:focus {
   background: #070707;
 }
 
+.email-link {
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #fafafa;
+  font-size: 32px;
+  padding: 7px 12px;
+  font-weight: normal;
+  margin-top: 250px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 120px;
+}
+
+.email-link:hover,
+.email-link:active {
+  color: #fff;
+  background: #070707;
+}
+
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
@@ -282,19 +332,20 @@ button:focus,
   display: flex;
   padding-left: 20px;
   margin: 0;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: left;
 }
 
 .about-list {
   float: right;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   list-style-type: none;
   text-align: left;
   padding-left: 100px;
   padding-right: 100px;
   font-size: large;
 }
+
 
 .about-section {
   display: flex;
@@ -325,10 +376,10 @@ button:focus,
 }
 
 .nav-list {
-  width: 100%;
-  justify-content: right;
+  width: 1520px;
+  justify-content: center;
   display: flex;
-  padding-right: 200px;
+  height: 83.2px;
 }
 
 img.mySlides.w3-animate-fading {
@@ -349,6 +400,31 @@ div.w3-section.w3-section {
 
 }
 
-.social {
+.social-media {
+  width: 209px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #fafafa;
+  font-size: 32px;
+  padding: 7px 12px;
+  font-weight: normal;
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 120px;
+}
+
+.social-media:hover,
+.social-media:active {
+  color: #fff;
+  background: #009688;
+}
+
+.index-header {
+  background-color: transparent;
+}
+
+.project-desc {
   color: white;
 }
