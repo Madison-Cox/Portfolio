@@ -8,54 +8,77 @@
   <link rel="shortcut icon" href="img/logo.svg">
   <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-<body>
-  <header class="page-header">
-    <!-- Add my logo here -->
-    <img src="img/logo.svg" alt="A picture of my logo" class="page-header__item">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact Me</a>
-        </li>
-      </ul>
+<body class="about-background">
+  <header class="index-header">
+    <nav class="main-navigation page-header__item2">
+      <div class="nav-list">
+        <ul role="menubar" class="navigation-list2">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <div class="img-slide">
-    <img class="mySlides1 w3-animate-fading" src="img/block.jpg">
-    <section>
-      <div>
-        <h3 class="about-header">Hello, My Name is</h3>
-      </div>
-      <div>
-        <h1 class="name-header" style="color:#3fbbff">Madison Cox</h1>
-        <ul class="about-list">
-          <ol>I grew up on a farm in south Mississippi, before moving to <span style="color:#3fbbff">Tennessee</span>.
-          </ol>
-          <ol>I attended Lincoln College of Technology for Automotive Technology and worked as an Automotive Technician
-            for Toyota for five years.</ol>
-          <ol>While working at <span style="color:#3fbbff">Toyota</span> I always had an interest in programming and web
+    <div class="w3-content w3-section">
+      <img class="mySlides w3-animate-fading" src="./img/headgasket.jpg">
+      <img class="mySlides w3-animate-fading" src="./img/parts.jpg">
+      <img class="mySlides w3-animate-fading" src="./img/timingcover.jpg">
+      <img class="mySlides w3-animate-fading" src="./img/bay.jpg">
+    </div>
+    <section class="about-section">
+      <span class="about-span">
+        <div class="about-div">
+          <h3 class="about-h3">Hello, My Name is</h3>
+          <h1 class="name-header">Madison Cox</h1>
+          <p class="about-list">
+            I grew up on a farm in south Mississippi, before moving to <span style="color:#3fbbff">Tennessee</span>.
+            I attended Lincoln College of Technology for Automotive Technology and worked as an Automotive Technician
+            for Toyota for five years.
+            While working at <span style="color:#3fbbff">Toyota</span> I always had an interest in programming and web
             development and
             decided to
-            complete a full-stack <span style="color:#3fbbff">developer</span> bootcamp.</ol>
-        </ul>
+            complete a full-stack <span style="color:#3fbbff">developer</span> bootcamp.
+          </p><br>
+          <p class="about-list">Outside of work I have many interest. I still work on
+            vehicles as a hobby because I enjoy
+            using the knowledge
+            I have gained throughout the years to repair my personal project car or my family's vehicles.<br>Reading is
+            another hobby that I enjoy whether it is books, online articles, or blogs. I find myself constantly finding
+            new interests or learning more about subjects I am already familiar with.</p>
+        </div>
+      </span>
     </section>
-    <img class="mySlides3 w3-animate-fading" src="img/engine2gr.jpg">
+    <script src="js/tota11y.min.js"></script>
+    <script>
+      var myIndex = 0;
+      carousel();
 
-  </div>
-  <section class="about-section">
-  </section>
-  <script src="js/tota11y.min.js"></script>
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 9000);
+      }
+    </script>
 </body>
 
 </html>
