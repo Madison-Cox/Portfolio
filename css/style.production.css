@@ -1,6 +1,9 @@
 body.index-body {
   background-blend-mode: darken;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ranch.jpg);
 }
 
@@ -8,7 +11,9 @@ body.about-background {
   background: rgba(43, 42, 42, 0.829);
   background-blend-mode: darken;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ranch.jpg);
 }
 
@@ -16,8 +21,9 @@ body.work-background {
   background: rgba(43, 42, 42, 0.829);
   background-blend-mode: darken;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ranch.jpg);
 
 }
@@ -222,12 +228,31 @@ button:focus {
 
 @media all and (max-width: 500px) {
   .grid {
-    grid-template-columns: 1fr;
+    display: block;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .img-slide {
+    position: relative;
+    opacity: 1;
+    display: inline-flex;
+    flex-wrap: inherit;
+    flex-direction: column;
+    text-align: center;
+
+  }
+}
+
+@media all and (min-width:700px) and (max-width: 1500px) {
+  .grid {
+    display: block;
   }
 }
 
 @media all and (max-width: 750px) {
   .grid {
+    grid-template-columns: 1fr;
     grid-gap: 10px;
   }
 
@@ -357,6 +382,8 @@ button:focus,
 
 .about-section {
   display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .name-header {
@@ -391,6 +418,8 @@ button:focus,
 }
 
 img.mySlides.w3-animate-fading {
+  max-width: 100%;
+  float: left;
   padding-left: 20px;
   border-radius: 5%;
 }
@@ -435,4 +464,8 @@ div.w3-section.w3-section {
 
 .project-desc {
   color: white;
+}
+
+span.span-about {
+  float: left
 }
