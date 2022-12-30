@@ -1,23 +1,23 @@
-body {
+body.index-body {
   background-blend-mode: darken;
-  background-size: 1540px 750px;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ranch.jpg);
 }
 
 body.about-background {
   background: rgba(43, 42, 42, 0.829);
   background-blend-mode: darken;
-  background-size: 1540px 750px;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ranch.jpg);
 }
 
 body.work-background {
   background: rgba(43, 42, 42, 0.829);
   background-blend-mode: darken;
-  background-size: 1540px 1900px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ranch.jpg);
 
 }
@@ -179,7 +179,7 @@ button:focus {
 .navigation-list__item:hover,
 .navigation-list__item:active {
   color: #fff;
-  background: #009688;
+  background: #6b9ddf;
 }
 
 /* starts grid fallback */
@@ -237,7 +237,7 @@ button:focus {
 }
 
 .button-project {
-  color: #000000;
+  color: #ffffff;
   background: transparent;
   border: 1px solid #fafafa;
   font-size: 32px;
@@ -253,7 +253,7 @@ button:focus {
 .button-project:hover,
 .button-project:active {
   color: #fff;
-  background: #070707;
+  background: #6b9ddf;
 }
 
 .email-link {
@@ -263,7 +263,7 @@ button:focus {
   font-size: 32px;
   padding: 7px 12px;
   font-weight: normal;
-  margin-top: 250px;
+  margin-top: 300px;
   display: inline-block;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -273,7 +273,7 @@ button:focus {
 .email-link:hover,
 .email-link:active {
   color: #fff;
-  background: #070707;
+  background: #6b9ddf;
 }
 
 button {
@@ -426,7 +426,7 @@ div.w3-section.w3-section {
 .social-media:hover,
 .social-media:active {
   color: #fff;
-  background: #009688;
+  background: #6b9ddf;
 }
 
 .index-header {
